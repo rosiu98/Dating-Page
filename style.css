@@ -137,13 +137,20 @@ body {
 
 
 .container {
+    position: relative;
     width: 1440px;
     height: 990px;
-    margin: 0 auto;
+    margin: 6rem auto;
+    padding: 0 7.4rem;
+    background-color: #FEF1E5;
+    background-image: url(img/noise.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
+
 .menu {
-    padding: 3.7rem 7.4rem;
+    padding: 3.7rem 0;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -221,7 +228,122 @@ body {
     border-radius: 100px;
     padding : 1.7rem 4.5rem;
     font-family: 'Product Sans Bold';
+    cursor: pointer;
+}
+
+main {
+    position: absolute;
+    top : 20%;
+    display: inline-block;
+}
+
+.left{width: 50%;}
+
+.mini-title h5 {
+    font-size: 1.4rem;
+    font-family: 'Product Sans Regular';
+    color: var(--color-orange);
+    margin-bottom: 1.5rem;
+}
+
+.title h1 {
+    font-size: 5.8rem;
+    color: var(--color-black);
+    margin-bottom: 3rem;
+}
+
+.title h1 .orange {
+    color: var(--color-orange);
+}
+
+.title h1 .shadow {
+    text-shadow: 0px 21px 26px #ed9b59;
+    
 }
 
 
-  
+.left .text {
+    font-size: 2rem;
+    width: 72%;
+    line-height: 3rem;
+    font-family: 'Product Sans Light Regular';
+    color: var(--color-black);
+    margin-bottom: 2.2rem;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    width: 68%;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0 29px 38px rgb(0 0 0 / 10%);
+    margin-bottom: 12rem;
+}
+
+.mail img{
+    margin-right: 2rem;
+    margin-left: 1rem;
+}
+
+.mail input {
+    margin-right: auto;
+    border: 0;
+    /* font-family: inherit; */
+    /* color: #1A1D32; */
+    font-size: 1.6rem;
+}
+
+.mail form {
+    font-family: inherit;
+    color: var(--color-grey);
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.mail span {
+    justify-self: end;
+}
+
+.mail input::placeholder{
+    margin-right: auto;
+    border: 0;
+    font-family: inherit;
+    
+    font-size: 1.6rem;
+}
+
+.mail input:focus {
+    outline: none;
+}
+
+.mail button {
+    padding: 1.6rem 4.5rem;
+    border-radius: 100px;
+    background-color: var(--color-orange);
+    border:0;
+    color: #fff;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72%;
+}
+
+.dates h1 {
+    font-size: 5.6rem;
+    color: var(--color-black);
+}
+
+.dates .box2 h1 {
+    color: #B25E21;
+}
+
+.dates p {
+    color: var(--color-black);
+    font-size: 1.6rem;
+}
